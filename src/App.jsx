@@ -1,10 +1,14 @@
 import React from "react";
+import Page1 from "./components/Page1";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      Hey there, start creating beautiful websites without any setup!
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
